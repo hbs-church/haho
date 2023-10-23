@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* reset code */
+* {margin: 0; padding: 0; box-sizing: border-box; font: 18px "Pretendard-Regular","맑은 고딕","굴림",sans-serif; color: #333;}
+li {list-style: none;}
+a {text-decoration: none; color: #333; display: block;}
+
+
+/* font zip*/
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 980px){
+    body>div#wrapper>div#talk {position: absolute; width: 5rem; height: 5rem; background: yellow; border-radius: 1.1rem; bottom: 10%; z-index: 100; position: fixed; display: flex; left: 75%; align-items : center; justify-content : center;}
+    body>div#wrapper>div#talk>p>a {text-align: center; font-size: 1rem; color: rgb(73, 19, 19); font-weight: 800; }
+
+
+    body>div#wrapper>div#sec1>header>h1 {font-size: 3rem; font-family: 'Cafe24ClassicType-Regular'; line-height: 1; width:100%;}
+    body div#sec1>header>h1>span {font-family: 'Cafe24ClassicType-Regular'; font-size: 2rem;}
+    body>div#wrapper>div#sec1>header>h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem;; margin-bottom: 2rem; font-weight: 900;}
+
+    body div#sec1>header>div.box1 {width: inherit; height: 4.4rem; background: white;  margin: 0 auto; margin-bottom: 1rem; border-radius: 1.1rem; margin-top: 3.5rem; padding-top:0.4rem;}
+    body div#sec1>header>div.box1>ul.info1>li {font-size:1.1rem; line-height: 1.8rem; margin-left:1.2rem;}
+    body div#sec1>header>div.box1>ul.info1>li:first-child { font-weight: 800;  margin-left:1.2rem; margin-right: 1rem; }
+
+    body div#sec1>header>div.box2 {width: inherit; height: 4.4rem; background: white;  margin: 0 auto; margin-bottom: 2.3rem; border-radius: 1.1rem; margin-top: 1.5rem; padding-top:0.4rem;}
+    body div#sec1>header>div.box2>ul.info2>li {font-size:1.1rem; line-height: 1.8rem; float: left;}
+    body div#sec1>header>div.box2>ul.info2>li:first-child { font-weight: 800;  margin-left:1.2rem; margin-right: 1rem; }
+    body div#sec1>header>div.box2>ul.info2>li:nth-child(2) {font-size: 0.7rem; margin-left:1.2rem;}
+    body div#sec1>header>div.box2>ul.info2>li:nth-child(2)>span {font-size:1rem; line-height: 2rem; font-weight: 800;}
+
+    body main#main {width: 100%; height: auto; position: absolute;}
+    body div#slide {width: 100%;  height:12rem; margin-top: 1.8rem;}
+    body div#slide>.slider {width: inherit; display:block;  left: 0%;}
+    body div#slide>.slider>img {width: inherit; height: auto;}
+
+
+
+    body>div#wrapper>div#sec2 {width: inherit; background: white; height: 56rem;}
+    body div#sec2>h2 {font-family: 'Cafe24ClassicType-Regular'; font-size: 2rem; padding-top: 5.3rem; line-height: 1.4;}
+    body div#sec2>p {font-size: 1.1rem; line-height: 2; padding-top: 1.6rem;}
+    body div#sec2>div#info3 { width: 90%; margin: 0 auto; height: 12rem; background: lemonchiffon; margin-top: 2.6rem; border-radius: 40px;}
+    body div#sec2>div#info3>h3 {font-size: 1.6rem; padding-top: 2.1rem; font-weight: 800;}
+    body div#sec2>div#info3>ul>li:first-child {font-size: 1.1rem; line-height: 1.6; padding-top: 0.6rem;}
+    body div#sec2>div#info3>ul>li:nth-child(2) {font-size: 0.95rem; margin-top: 1.2rem; color: orangered;}
+
+
+    body main#main2 {width: 96%; height: auto; position:absolute; margin-bottom: 0rem;}
+    body div#slide2 {width: 100%; height: auto; position: relative; margin-top: 1.8rem; }
+    body div#slide2>.slider2 {width: inherit; display:block; left: 2%; }
+    body div#slide2>.slider2>img {width: inherit; height: auto;}
+
+    body div#movie {width: 96%; height: auto; position:absolute; margin-bottom: 0.8rem; margin-top: 5rem; left: 2%;}
+    body div#movie>iframe {width: 100%; height: 16rem; left: 0%;}
+
+    body>div#wrapper>div#sec3 {width: 100%; height: 50rem;}
+    body div#sec3>h2 {font-family: 'Cafe24ClassicType-Regular'; font-size: 2rem; padding-top: 5.3rem; line-height: 1.4;}
+    body div#sec3>p {font-size: 1.1rem; line-height: 2; padding-top: 1.4rem;}
+    body div#sec3>p>span {font-size: 1.1rem; line-height: 1.4; padding-top: 1.6rem; font-weight: 800;}
+
+    body div#sec3>div#map {width: 96%; height:auto; margin-top: 2rem; margin-bottom: 2rem; left:2%;}
+    body div#sec3>div#map>div#daumRoughmapContainer1698052573789 {width: 100%; height:auto; margin-top: 2rem; margin-bottom: 2rem; left:2%;}
+
+
+
+}
+
+
+/* layout code */
+div#wrapper {width: 100%; height: auto; margin : 0 auto; position: relative;}
+div#wrapper>div#talk {position: absolute; width: 8vw; height: 10vh; background: yellow; border-radius: 20px; bottom: 15%; z-index: 100; position: fixed; display: flex; left: calc(91% - 40px); align-items : center; justify-content : center;}
+div#wrapper>div#talk>p>a {text-align: center; font-size: 1.2rem; color: rgb(73, 19, 19); font-weight: 800; }
+div#wrapper>div.sec {width: inherit; height: 1280px; text-align: center;}
+
+
+div#wrapper>div#sec1 {width: inherit; background: burlywood; background: url("image/back1.png"); height: auto; background-repeat: no-repeat; background-size: cover; padding: 5rem 2rem;}
+div#wrapper>div#sec1>header>h1 {font-size: 10rem; font-family: 'Cafe24ClassicType-Regular'; line-height: 1;}
+div#sec1>header>h1>span {font-family: 'Cafe24ClassicType-Regular'; font-size: 6rem;}
+div#wrapper>div#sec1>header>h3 { font-family: 'Playfair Display', serif; font-size: 4rem;; margin-bottom: 5rem; font-weight: 900;}
+
+div#sec1>header>div.box1 {width: inherit; height: 2.3rem; background: white;  margin: 0 auto; margin-bottom: 2.3rem; border-radius: 1.8rem; margin-top: 3.5rem;}
+div#sec1>header>div.box1>ul.info1>li {font-size:1.5rem; line-height: 2.3rem; float: left;}
+div#sec1>header>div.box1>ul.info1>li:first-child { font-weight: 800;  margin-left:2.3rem; margin-right: 2.2rem;}
+
+div#sec1>header>div.box2 {width: inherit; height: 2.3rem; background: white;  margin: 0 auto; margin-bottom: 2.3rem; border-radius: 1.8rem; margin-top: 3.5rem;}
+div#sec1>header>div.box2>ul.info2>li {font-size:1.5rem; line-height: 2.3rem; float: left;}
+div#sec1>header>div.box2>ul.info2>li:first-child { font-weight: 800;  margin-left:2.3rem; margin-right: 2.2rem; }
+div#sec1>header>div.box2>ul.info2>li:nth-child(2)>span {font-size:1.5rem; line-height: 2.3rem; font-weight: 800;}
+
+
+/* main */
+main#main {width: inherit; height: 100%; margin: 0 auto;}
+main#main2 {width: 680px; height: 90px; margin: 0 auto; margin-bottom: 10px;}
+
+/* main > slide code */
+div#slide {width: inherit; height: 400px; position: relative; margin-top: 1.8rem; }
+div#slide>.slider {position: absolute; left:calc(50% - 340px); width: inherit; height: inherit; float: left; }
+div#slide>.slider>img {width: inherit; height: inherit;float: left; }
+
+/* main > slide2 code */
+div#slide2 {width: inherit; height: 90px; position: relative; margin-top: 30px; }
+div#slide2>.slider2 {position: absolute; left:calc(50% - 340px); width: 680px; height: inherit; float: left; }
+div#slide2>.slider2>img {width: inherit; height: inherit ;float: left; }
+
+
+
+
+div#wrapper>div#sec2 {width: inherit; background: white; height: 1100px;}
+div#sec2>h2 {font-family: 'Cafe24ClassicType-Regular'; font-size: 2.8rem; padding-top: 5.3rem;}
+div#sec2>p {font-size: 1.4rem; line-height: 2; padding-top: 1.6rem;}
+div#sec2>div#info3 { width: 70%; margin: 0 auto; height: 14rem; background: lemonchiffon; margin-top: 30px; border-radius: 40px;}
+div#sec2>div#info3>h3 {font-size: 2rem; padding-top: 2.1rem; font-weight: 800;}
+div#sec2>div#info3>ul>li:first-child {font-size: 1.4rem; line-height: 1.6; padding-top: 0.6rem;}
+div#sec2>div#info3>ul>li:nth-child(2) {font-size: 1rem; margin-top: 1.4rem; color: orangered;}
+
+
+
+
+div#wrapper>div#sec3 {width: inherit;}
+div#sec3>h2 {font-family: 'Cafe24ClassicType-Regular'; font-size: 2.8rem; padding-top: 10rem;}
+div#sec3>p {font-size: 1.4rem; line-height: 2; padding-top: 2rem;}
+div#sec3>p>span {font-size: 1.4rem; line-height: 2; padding-top: 1.6rem; font-weight: 800;}
+
+div#sec3>div#daumRoughmapContainer1698052573789 {margin-top: 3rem; left:calc(50% - 340px); margin-bottom: 5rem;}
